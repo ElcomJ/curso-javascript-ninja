@@ -4,29 +4,34 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+function soma(x, y) {
+    return x+y;
+}
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
+var x = soma(3, 2);
 
 // Qual o valor atualizado dessa variável?
-?
+5
 
 // Declare uma nova variável, sem valor.
-?
+var y;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
+function add(q) {
+    return q = 'SOMA';
+}
 
 // Invoque a função criada acima.
-?
+y = add();
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+/* y = add();
+'SOMA'*/
 
 /*
 Crie uma função com as seguintes características:
@@ -35,19 +40,25 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function add(a, b, c) {
+    if(a && b && c == null) {
+        return 'Preencha todos os campos corretamente!';
+    } else {
+        return a * b * c + 2;
+    }
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+add(1, 2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+'Preencha todos os campos corretamente';
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+add(1, 2, 3);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+8;
 
 /*
 Crie uma função com as seguintes características:
